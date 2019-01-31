@@ -12,7 +12,9 @@ public class JokesApplication {
 
 		ApplicationContext applicationContext = SpringApplication.run(JokesApplication.class, args);
 		final JokesManager jokesManager = (JokesManager)applicationContext.getBean("jokesManager");
-		System.out.println(jokesManager.getJoke());
+		for(int i=0; i<10; i++) {
+			System.out.println(jokesManager.getJoke());
+		}
 	}
 
 }
